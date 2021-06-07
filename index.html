@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+  <div class="container">
+    <h1 id="title" class="text-light">
+      Formulario de encuesta
+    </h1>
+    <p id="description" class="text-secondary">Esta es la descripcion. No es muy sofisticada porque le estoy metiendo la ficha al proyecto de los gatos😼 y perros🐶</p>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- nombre -->
+        <form id="survey-form" class="col-12 border bg-light" action="">
+          <div class="m-2 form-group">
+            <label id="name-label" for="name">nombre</label>
+            <input type="text" id="name" required placeholder="name" autocomplete="name" class="form-control">  
+          </div>
+            <!-- email -->
+          <div class="m-2 form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" required placeholder="email" autocomplete="email" class="form-control">
+          </div>
+            <!-- numero -->
+            <div class="form-group">
+              <label id="number-label" for="number"  >Numero</label>
+              <input type="number"  required placeholder="number" autocomplete="phone"  id="number"min="1" max="10"class="form-control">
+            </div>
+            <div class="m-2 form-group">
+              <label for="select-group">Selecciona Opcion</label>
+              <select class="form-control" name="" id="dropdown">
+                <option value="opcion1">Frontend</option>
+                <option value="opcion2">Backend</option>
+              </select>
+            </div>
+          
+            <!-- ratio -->
+            <div class="form-group">
+              <div class="m-2 form-check-inline">
+                <input type="radio" value="mujer" name="genero" id="mujer" class="input-radio"/>
+                <label for="mujer">Mujer</label>  
+              </div>
+              <div class="m-2 form-check-inline">
+                <input type="radio" name="genero" id="hombre" value="hombre"/>
+                <label for="hombre">Hombre</label>
+              </div>
+            </div>
+          
+          <!-- seleccion -->
+          
+  
+          <!-- correo -->
+          <div class="m-2 form-group">
+            <label for="user-email">Correo electronico</label>
+          <input class="form-control" type="email" id="user-email">
+          </div>
+          <!-- contraseña -->
+          <div class="m-2 form-group">
+            <label for="user-password">contraseña</label>
+            <input class="form-control" type="password" id="user-password">
+          </div>
+          <!-- comentario -->
+          <div class="m-2 form-group">
+            <label for="user-comment">Comentarios</label>
+            <textarea class="form-control form-control-sm" name="user-comment" id="user-comment">
+            </textarea>
+          </div>
+          <!-- terminos y condiciones -->
+          <div class="m-2 form-check">
+            <input type="checkbox" value="meGusta" id="noMeGusta"/>
+            <label for="noMeGusta">no me gusta</label>
+          </div>
+          <div class="m-2 form-check">
+            <input type="checkbox" value="meGusta" id="meGusta"/>
+            <label for="meGusta">me gusta</label>
+          </div>
+          <div class="m-2 form-check">
+            <input type="checkbox" value="terminos y condiciones" id="terms-conditions"/>
+            <label for="terms-conditions">Aceptar Terminos y condiciones</label>
+          </div>
+          <!-- enviar -->
+          <input class="btn btn-primary" type="submit" id="submit" value="enviar"/>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
